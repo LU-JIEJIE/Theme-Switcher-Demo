@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- 公共css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- 默认使用白色主题 -->
+    <link rel="stylesheet" href="css/theme-white.css" data-theme="white" title="theme-white">
+    <!-- 只加载不渲染 -->
+    <link rel="alternate stylesheet" href="css/theme-black.css" data-theme="black" disabled title="theme-black">
+    <link rel="alternate stylesheet" href="css/theme-blue.css" data-theme="blue" disabled title="theme-blue">
+    <link rel="alternate stylesheet" href="css/theme-red.css" data-theme="red" disabled title="theme-red">
+    <title>Theme Switcher Demo</title>
 </head>
 <body>
-    
+    <div class="container">
+        <section class="title">Theme Switcher Demo</section>
+        <section class="switch-button">
+            <div class="btn white" data-theme="white"></div>
+            <div class="btn black" data-theme="black"></div>
+            <div class="btn red" data-theme="red"></div>
+            <div class="btn blue" data-theme="blue"></div>
+        </section>
+    </div>
 </body>
+<script src="./script.js"></script>
 </html>
