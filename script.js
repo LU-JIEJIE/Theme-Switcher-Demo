@@ -8,9 +8,14 @@ const themes = [
 const btns = document.querySelectorAll('.btn');
 
 btns.forEach((btn) => {
+    // 绑定点击变换主题事件
     btn.addEventListener('click', function (e) {
         const theme = btn.dataset.theme;
         themeSwitch(theme);
+    });
+
+    // 绑定鼠标移过效果事件
+    btn.addEventListener('mouseover', function (e) {
     });
 })
 
